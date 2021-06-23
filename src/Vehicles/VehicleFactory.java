@@ -1,7 +1,7 @@
 package Vehicles;
 import util.*;
 
-public abstract class VehicleFactory 
+public class VehicleFactory 
 {
 
     // Creates a new vehicle of the given type.

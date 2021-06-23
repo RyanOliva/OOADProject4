@@ -32,7 +32,7 @@ public class GarageAnnouncer extends GarageEmployee
     {   
         if (state == "left") this.clockOut ();
         else if (state == "arrived") this.clockIn();
-        else System.out.println ("This is the Garage Announcer! The mechanic is about to start " + state + " the vehicles.");
+        else System.out.println ("This is the Garage Announcer! The mechanic is about to start " + state + " a vehicle.");
     }
 
     // Hook for announcing the time

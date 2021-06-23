@@ -38,7 +38,7 @@ public class GarageAnnouncer extends GarageEmployee
     // Hook for announcing the time
     public void updateTime (String time)
     {
-        System.out.println ("The time is now " + time + "!");
+        System.out.println ("This is the Garage Announcer! The time is now " + time + "!");
     }
     
 }

@@ -104,6 +104,8 @@ public class Garage
                 case 18:
                     this.mechanic.lock (vehicle);
                     break;
+                default:
+                    return;
             }
         }
     }

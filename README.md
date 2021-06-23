@@ -26,4 +26,4 @@ All of our code is located under the `src` directory. The program entry point, o
 
 ## UML
 Below is a picture of our UML diagrams for our project. You can find a pdf of this in the root directory of this repo.
-![UML diagram](https://github.com/bouldercoder9/OOADProject3/blob/main/Project3_UML.png)
+![UML diagram](https://github.com/bouldercoder9/OOADProject3/blob/main/Project3_UML.pdf)

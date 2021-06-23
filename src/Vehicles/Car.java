@@ -1,8 +1,9 @@
 package Vehicles;
 import java.util.*;
 
-public abstract class Car extends  Vehicle
+public abstract class Car extends Vehicle
 {
+
     public Car (String licensePlate)
     {
         super (licensePlate);

@@ -1,86 +1,47 @@
 package Vehicles;
-import java.util.*;
+import util.*;
 
-public class VehicleFactory {
+public abstract class VehicleFactory 
+{
 
-    private static HashSet <String> licenses = new HashSet <String>();
-
-    public static Vehicle getVehicle (VehicleType vt)
+    // Creates a new vehicle of the given type.
+    // Also calls the LicensePlate manager to generate a unique license plate for each vehicle.
+    // Sets the crash strategy for the monster trucks.
+    public static Vehicle create (VehicleType vt)
     {
-        Vehicle newVehicle;
-        String license = generateLicensePlate (vt);
+        String license = LicensePlate.get (vt);
         switch (vt)
         {
             case BIKE:
-                newVehicle = new Bike (license);
-                break;
+                return new Bike (license);
             case MONSTER:
-                newVehicle = new Monster (license);
-                break;
+                Monster monster = new Monster (license);
+                // Strategy pattern
+                monster.setCrashStrategy(new CrashChance ());
+                return monster;
             case TRIKE:
-                newVehicle = new Trike (license);
-                break;
+                return new Trike (license);
             case SIDECAR:
-                newVehicle = new Sidecar (license);
-                break;
-             case HATCHBACK:
-                 newVehicle = new Hatchback (license);
-                 break;
-             case SUV:
-                 newVehicle = new SUV (license);
-                 break;
-             case WAGON:
-                 newVehicle = new Wagon (license);
-                 break;
-             case CONVERTIBLE:
-                 newVehicle = new Convertible (license);
-                 break;
-             case PICKUP:
-                 newVehicle = new Pickup (license);
-                 break;
-             case DELIVERY:
-                 newVehicle = new Delivery (license);
-                 break;
+                return new Sidecar (license);
+            case HATCHBACK:
+                return new Hatchback (license);
+            case SUV:
+                return new SUV (license);
+            case WAGON:
+                return new Wagon (license);
+            case CONVERTIBLE:
+                return new Convertible (license);
+            case PICKUP:
+                return new Pickup (license);
+            case DELIVERY:
+                return new Delivery (license);
             case SCHOOLBUS:
-                 newVehicle = new Schoolbus (license);
-                 break;
+                return new Schoolbus (license);
             case SHUTTLEBUS:
-                newVehicle = new Shuttlebus (license);
-                break;
+                return new Shuttlebus (license);
             default:
                 System.out.println ("Something went horribly wrong. Attempted to create an unknown vehicle.");
                 return null;
-        }
-        return newVehicle;
-    }
-
-    // This function generates a license plate for a new vehicle.
-    // A license number starts with the first letter of the vehicle type and contains 5 random letters or numbers following it.
-    // This method will return a unique license number (FOR THE INSTANCE OF A SINGLE PROGRAM) each time it is run.
-    private static String generateLicensePlate (VehicleType vt)
-    {
-
-        String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        String license = "";
-
-        // Create a random license number, if it is not unique then try again.
-        while (true)
-        {
-            Random rand = new Random ();
-
-            // Generate a string by randomly selecting from the hardcoded alphabet
-            license =  "" + vt.toString ().charAt (0);
-            for (int i = 0; i < 5; i++)
-            {
-                license += alpha.charAt (rand.nextInt (alpha.length ()));
-            }
-
-            // If the license number is unique, add it to the hashset and return it. Otherwise try again.
-            if (!licenses.contains (license)) 
-            {
-                licenses.add (license);
-                return license;
-            }
         }
     }
 }

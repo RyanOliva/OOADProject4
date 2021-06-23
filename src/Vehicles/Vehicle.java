@@ -7,10 +7,17 @@ public abstract class Vehicle
 {
     private String licensePlate;
     private boolean isCrashed = false;
+    private CrashStrategy crashStrategy = new CrashNever();
 
     public Vehicle (String licensePlate)
     {
         this.licensePlate = licensePlate;
+    }
+
+    // Strategy pattern algorithm setter
+    public void setCrashStrategy (CrashStrategy cs)
+    {
+        this.crashStrategy = cs;
     }
 
     public String getLicensePlate ()
@@ -41,18 +48,17 @@ public abstract class Vehicle
         System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " runs.");
     }
 
+    // This method uses the strategy pattern to determine if the vehicle should crash.
     public void testDrive ()
     {
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " drives.");
+        String result = "drives.";
+        this.isCrashed = this.crashStrategy.isCrashed ();
+        if (this.isCrashed) result = "crashed.";
+        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result);
     }
 
     public boolean isCrashed () 
     {
         return this.isCrashed;
-    }
-
-    public void crashed () 
-    {
-        this.isCrashed = true;
     }
 }

@@ -25,5 +25,5 @@ All of our code is located under the `src` directory. The program entry point, o
 - `garage_actions.out`: Program output after running the simulation for 10 days.
 
 ## UML
-Below is a picture of a UML diagram for our project. You can find a pdf of this in the root directory of this repo.
-![UML diagram](https://github.com/bouldercoder9/OOADProject2/blob/main/OOADProject2UML.png)
+Below is a picture of our UML diagrams for our project. You can find a pdf of this in the root directory of this repo.
+![UML diagram](https://github.com/bouldercoder9/OOADProject3/blob/main/Project3_UML.png)

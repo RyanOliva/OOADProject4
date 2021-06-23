@@ -10,7 +10,9 @@ public class Garage
     // outside the class. 
     private ArrayList <Vehicle> vehicles;
     private Mechanic mechanic = null;
+    private GarageAnnouncer announcer = new GarageAnnouncer("dan");
     private HiringPool hiringPool;
+    GarageClock gc;
 
     // Starts an empty list of vehicles, opens a hiring pool, and hires a mechanic
     public Garage ()
@@ -18,18 +20,26 @@ public class Garage
         this.vehicles = new ArrayList <Vehicle>();
         this.hiringPool = new HiringPool ();
         this.hireMechanic ();
+        this.buyAClock();
+    }
+
+    private void buyAClock ()
+    {
+        this.gc = new GarageClock (8, 20, this);
+        gc.registerObserver(this.announcer);
     }
 
     // ABSTRACTION: This method handles hiring of a mechanic, while hiding exactly how that's done.
     // It also calls a method that gets a name for a mechanic, that method is another example of abstraction as well.
-    public void hireMechanic ()
+    private void hireMechanic ()
     {
         if (this.mechanic != null) System.out.println ("The garage may only have one mechanic hired at a time.");
         else this.mechanic = new Mechanic (this.hiringPool.getName());
+        this.mechanic.registerObserver(this.announcer);
     }
 
     // ABSTRACTION: This method handles firing of a mechanic, while hiding exactly how that's done.
-    public void fireMechanic ()
+    private void fireMechanic ()
     {
         if (this.mechanic == null) System.out.println ("The garage cannot fire a mechanic when one isn't hired.");
         else this.mechanic = null;
@@ -45,36 +55,14 @@ public class Garage
     public void performWorkDay (int dayNum)
     {
         this.mechanic.clockIn (dayNum);
-
-        // We use a listiterator because sometimes we need to remove a vehicle during iteration
-        ListIterator<Vehicle> vIterator = this.vehicles.listIterator ();
-        while (vIterator.hasNext ())
-        {
-            Vehicle vehicle = vIterator.next ();
-            // POLYMORPHISM: Some vehicles have different behaviour for the following methods.
-            // When you call .tuneUp () on an instance of Car it could sputter, but we don't need to code for that
-            // special case here.
-            this.mechanic.unlock (vehicle);
-            this.mechanic.wash (vehicle);
-            this.mechanic.tuneUp (vehicle);
-            this.mechanic.testDrive (vehicle);
-            if (vehicle instanceof Monster && vehicle.isCrashed ())
-            {
-                this.fireMechanic ();
-                this.hireMechanic ();
-                vIterator.remove ();
-                continue;
-            }
-            this.mechanic.lock (vehicle);
-        }
-
+        this.gc.begin ();
         this.mechanic.clockOut (dayNum);
     }
 
     // Allows addition of a vehicle
     public void addVehicle (VehicleType vt)
     {
-        this.vehicles.add (VehicleFactory.getVehicle (vt));
+        this.vehicles.add (VehicleFactory.create (vt));
     }
     
     // Allows removal of a vehicle via license plate.
@@ -83,5 +71,40 @@ public class Garage
         // IDENTITY: Each vehicle has a unique license plate (guaranteed by VehicleFactory) and we can use that
         // identity to fullfill a vehicle deletion request to this garage if that license plate exists here. 
         vehicles.removeIf (vehicle -> (vehicle.getLicensePlate ().equals (license)));
+    }
+
+    // Gets called by the GarageClock
+    public void updateTime (int time)
+    {
+        ListIterator<Vehicle> vIterator = this.vehicles.listIterator ();
+        while (vIterator.hasNext ())
+        {
+            Vehicle vehicle = vIterator.next ();
+            switch (time)
+            {
+                case 9:
+                    this.mechanic.unlock (vehicle);
+                    break;
+                case 12:
+                    this.mechanic.wash (vehicle);
+                    break; 
+                case 14:
+                    this.mechanic.tuneUp (vehicle);
+                    break;
+                case 16:
+                    this.mechanic.testDrive (vehicle);
+                    if (vehicle instanceof Monster && vehicle.isCrashed ())
+                    {
+                        this.fireMechanic ();
+                        this.hireMechanic ();
+                        vIterator.remove ();
+                        continue;
+                    }
+                    break;
+                case 18:
+                    this.mechanic.lock (vehicle);
+                    break;
+            }
+        }
     }
 }

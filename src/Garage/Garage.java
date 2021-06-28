@@ -10,7 +10,6 @@ public class Garage
     // outside the class. 
     private ArrayList <Vehicle> vehicles;
     private Mechanic mechanic = null;
-    private GarageAnnouncer announcer = new GarageAnnouncer("dan");
     private HiringPool hiringPool;
     GarageClock gc;
 
@@ -26,7 +25,6 @@ public class Garage
     private void buyAClock ()
     {
         this.gc = new GarageClock (8, 20, this);
-        gc.registerObserver(this.announcer);
     }
 
     // ABSTRACTION: This method handles hiring of a mechanic, while hiding exactly how that's done.
@@ -35,7 +33,6 @@ public class Garage
     {
         if (this.mechanic != null) System.out.println ("The garage may only have one mechanic hired at a time.");
         else this.mechanic = new Mechanic (this.hiringPool.getName());
-        this.mechanic.registerObserver(this.announcer);
     }
 
     // ABSTRACTION: This method handles firing of a mechanic, while hiding exactly how that's done.

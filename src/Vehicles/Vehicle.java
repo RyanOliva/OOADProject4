@@ -30,7 +30,11 @@ public abstract class Vehicle
         String result = "shines";
         Random rand = new Random ();
         if (rand.nextInt (10) < 3) result = "sparkles";
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result + ".");
+        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Soaped" + ". " +
+                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Scrubbed" + ". " +
+                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Rinsed" + ". " +
+                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Dried" + ". " +
+                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result + ". ");
     }
 
     public void unlock ()
@@ -54,7 +58,7 @@ public abstract class Vehicle
         String result = "drives.";
         this.isCrashed = this.crashStrategy.isCrashed ();
         if (this.isCrashed) result = "crashed.";
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result);
+        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result );
     }
 
     public boolean isCrashed () 

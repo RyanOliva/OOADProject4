@@ -2,7 +2,7 @@ package Garage;
 import java.util.*;
 import Employees.*;
 import Vehicles.*;
-import util.User;
+import util.*;
 
 public class Garage 
 {
@@ -10,24 +10,16 @@ public class Garage
     // The Garage contains a set of vehicles and a mechanic, and exactly how the garage does this is not relevant
     // outside the class. 
     private ArrayList <Vehicle> vehicles;
-    private Mechanic mechanic = null;
     private User user = null;
     GarageClock gc;
+    private Command command;
 
     // Starts an empty list of vehicles, opens a hiring pool, and hires a mechanic
     public Garage ()
     {
         this.vehicles = new ArrayList <Vehicle>();
-        this.user = User.getUserInstance();
-        this.hireMechanic ();
+        this.user = User.getUserInstance(this);
         this.gc = new GarageClock (9, 20, this);
-    }
-
-    // ABSTRACTION: This method handles hiring of a mechanic, while hiding exactly how that's done.
-    // It also calls a method that gets a name for a mechanic, that method is another example of abstraction as well.
-    private void hireMechanic ()
-    {
-        this.mechanic = new Mechanic (this.user.getName());
     }
 
     // Handles a single workday at the garage
@@ -50,40 +42,26 @@ public class Garage
         vehicles.removeIf (vehicle -> (vehicle.getLicensePlate ().equals (license)));
     }
 
+    public void setCommand (Command command)
+    {
+        this.command = command;
+    }
+
     // Gets called by the GarageClock
     public boolean updateTime (int time)
     {
         ListIterator<Vehicle> vIterator = this.vehicles.listIterator ();
-        int task = this.user.getTaskSelection();
+        if (!this.user.waitForCommand()) return false;
         while (vIterator.hasNext ())
         {
             Vehicle vehicle = vIterator.next ();
+            
+            this.command.execute(vehicle);
 
-            switch (task)
+            if (vehicle instanceof Monster && vehicle.isCrashed ()) 
             {
-                case 1:
-                    mechanic.unlock (vehicle);
-                    break;
-                case 2:
-                    mechanic.wash(vehicle);
-                    break;
-                case 3:
-                    mechanic.tuneUp(vehicle);
-                    break;
-                case 4:
-                    mechanic.testDrive(vehicle);
-                    if (vehicle instanceof Monster && vehicle.isCrashed ()) 
-                    {
-                        System.out.println ("Well, that was a good run working at the Garage... Unfortunately you crashed one of our Monster trucks and we're going to have to let you go. Good luck further.");
-                        return false;
-                    }
-                    break;
-                case 5:
-                    mechanic.lock(vehicle);
-                    break;
-                case 6:
-                    mechanic.clockOut(1);
-                    return false;
+                System.out.println ("Well, that was a good run working at the Garage... Unfortunately you crashed one of our Monster trucks and we're going to have to let you go. Good luck further.");
+                return false;
             }
         }
         return true;

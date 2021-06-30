@@ -14,18 +14,6 @@ public class Mechanic extends GarageEmployee
         this.name = name;
     }
 
-    public void clockIn (int dayNum)
-    {
-        System.out.println (this.name + " arrives at Garage on Day " + dayNum + ".");
-
-    }
-
-    public void clockOut (int dayNum)
-    {
-        System.out.println (this.name + " leaves Garage on Day " + dayNum + ".");
-
-    }
-
     public void unlock (Vehicle vehicle)
     {
 

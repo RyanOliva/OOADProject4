@@ -14,7 +14,7 @@ This section is assuming you are on a CLI with a JDK installed.
 3. To run type `java Project4` 
 
 ## Project Structure
-All of our code is located under the `src` directory. The program entry point, or main method, is located directly under `src` and is called `Project3.java`. 
+All of our code is located under the `src` directory. The program entry point, or main method, is located directly under `src` and is called `Project4.java`. 
 
 `src` contains the following sub-directories and files:
 - `Vehicles`: This directory contains all java classes related to vehicles, it also contains the VehicleFactory class, VehicleType enum, and CrashStrategies.

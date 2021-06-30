@@ -15,5 +15,5 @@ public class Monster extends TruckDecorator
                 this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Polished" + ". " +
                 this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Detailed" + ". ");
     }
-    // The crash chance has been delegated to the Vehicle superclass via strategy pattern
+
 }

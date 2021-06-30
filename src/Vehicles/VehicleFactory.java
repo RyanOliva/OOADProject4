@@ -18,7 +18,11 @@ public class VehicleFactory
                 Monster monster = new Monster (license);
                 // Strategy pattern
                 monster.setCrashStrategy(new CrashChance ());
-                return monster;
+                WaxDecorator wax1 = new WaxDecorator (license, monster);
+                WaxDecorator wax2 = new WaxDecorator (license, wax1);
+                PolishDecorator polish = new PolishDecorator (license, wax2);
+                DetailDecorator detail = new DetailDecorator (license, polish);
+                return detail;
             case TRIKE:
                 return new Trike (license);
             case SIDECAR:
@@ -30,7 +34,11 @@ public class VehicleFactory
             case WAGON:
                 return new Wagon (license);
             case CONVERTIBLE:
-                return new Convertible (license);
+                Convertible convertible = new Convertible(license);
+                WaxDecorator wax = new WaxDecorator (license, convertible);
+                DetailDecorator detail1 = new DetailDecorator (license, wax);
+                DetailDecorator detail2 = new DetailDecorator (license, detail1);
+                return detail2;
             case PICKUP:
                 return new Pickup (license);
             case DELIVERY:

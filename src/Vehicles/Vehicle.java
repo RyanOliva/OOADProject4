@@ -9,6 +9,7 @@ public abstract class Vehicle
     private boolean isCrashed = false;
     private CrashStrategy crashStrategy = new CrashNever();
 
+
     public Vehicle (String licensePlate)
     {
         this.licensePlate = licensePlate;

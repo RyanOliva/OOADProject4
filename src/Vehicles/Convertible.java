@@ -1,7 +1,5 @@
 package Vehicles;
 
-import java.util.Random;
-
 public class Convertible extends CarDecorator{
     public Convertible (String licensePlate)
     {

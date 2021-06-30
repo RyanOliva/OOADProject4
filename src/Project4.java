@@ -1,7 +1,5 @@
-import java.util.Scanner;
 import Garage.*;
 import Vehicles.*;
-import util.User;
 
 public class Project4
 {

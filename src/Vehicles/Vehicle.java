@@ -10,6 +10,7 @@ public abstract class Vehicle
     private CrashStrategy crashStrategy = new CrashNever();
     private String washStatus;
 
+
     public Vehicle (String licensePlate)
     {
         this.licensePlate = licensePlate;

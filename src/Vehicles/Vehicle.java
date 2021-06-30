@@ -8,6 +8,7 @@ public abstract class Vehicle
     private String licensePlate;
     private boolean isCrashed = false;
     private CrashStrategy crashStrategy = new CrashNever();
+    private String washStatus;
 
     public Vehicle (String licensePlate)
     {
@@ -27,14 +28,19 @@ public abstract class Vehicle
 
     public void wash ()
     {
-        String result = "shines";
+        this.washStatus = "shines";
         Random rand = new Random ();
-        if (rand.nextInt (10) < 3) result = "sparkles";
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Soaped" + ". " +
-                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Scrubbed" + ". " +
-                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Rinsed" + ". " +
-                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + "is Dried" + ". " +
-                            this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result + ". ");
+        if (rand.nextInt (10) < 3) this.washStatus = "sparkles";
+        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " is starting the wash process.");
+        System.out.println ("It has been soaped.");
+        System.out.println ("It has been scrubbed.");
+        System.out.println ("It has been rinsed.");
+        System.out.println ("It has been dried.");
+    }
+
+    public void printWashResult ()
+    {
+        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + this.washStatus + ". ");
     }
 
     public void unlock ()

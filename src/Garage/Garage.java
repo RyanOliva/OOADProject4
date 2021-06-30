@@ -57,7 +57,7 @@ public class Garage
 
             this.command.execute(vehicle);
 
-            if (vehicle instanceof Monster && vehicle.isCrashed ()) 
+            if (vehicle.isCrashed ()) 
             {
                 System.out.println ("Well, that was a good run working at the Garage... Unfortunately you crashed one of our Monster trucks and we're going to have to let you go. Good luck further.");
                 return false;

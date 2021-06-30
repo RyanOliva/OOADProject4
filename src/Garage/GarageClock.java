@@ -14,11 +14,13 @@ public class GarageClock
 
     public void begin ()
     {
-        for (int i = this.open; i <= this.close; i++)
+        for (int i = this.open; i < this.close; i++)
         {
-            System.out.println ("It is currently " + this.stringifyTime (i));
-            if (!this.garage.updateTime (i)) break;
+            System.out.println ("\nIt is currently " + this.stringifyTime (i));
+            if (!this.garage.updateTime (i)) return;
         }
+        System.out.println ("\nIt is currently " + this.stringifyTime (this.close));
+        System.out.println ("The Garage is closing for the day!");
     }
 
     private String stringifyTime (int time) 

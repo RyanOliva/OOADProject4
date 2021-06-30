@@ -11,7 +11,6 @@ public class PolishDecorator extends WashDecorator {
     public void wash ()
     {
         this.decorate.wash ();
-        System.out.println (this.getLicensePlate () + " polished");
         System.out.println("It has been polished.");
     }
 }

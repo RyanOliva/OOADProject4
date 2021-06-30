@@ -7,10 +7,11 @@ public class DetailDecorator extends WashDecorator{
         super(licensePlate);
         this.decorate = vehicle;
     }
+
     @Override
     public void wash ()
     {
         this.decorate.wash ();
-        System.out.println (this.getLicensePlate () + " waxed");
+        System.out.println ("It has been detailed.");
     }
 }

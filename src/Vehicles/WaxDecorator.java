@@ -11,7 +11,6 @@ public class WaxDecorator extends WashDecorator{
     public void wash ()
     {
         this.decorate.wash ();
-        System.out.println (this.getLicensePlate () + " waxed");
         System.out.println("It has been waxed");
     }
 }

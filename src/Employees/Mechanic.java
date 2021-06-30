@@ -32,7 +32,6 @@ public class Mechanic extends GarageEmployee
 
         System.out.println (this.name + " washed " + vehicle.getLicensePlate () + ".");
         vehicle.wash ();
-        vehicle.printWashResult();
     }
 
     public void tuneUp (Vehicle vehicle)

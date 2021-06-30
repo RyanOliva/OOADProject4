@@ -33,7 +33,7 @@ public class User {
     // Get a task selection from the user
     public boolean waitForCommand ()
     {
-        System.out.println ("You can perform one of the folloing tasks:");
+        System.out.println ("You can perform one of the following tasks:");
         System.out.println ("1. Unlock");
         System.out.println ("2. Wash");
         System.out.println ("3. Tune-Up");
@@ -44,18 +44,22 @@ public class User {
         int selection = 0;
         while (selection < 1 || selection > 6)
         {
-            System.out.print ("Which would like to perform (enter 1-5): ");
+            System.out.print ("Which would like to perform (enter 1-6): ");
             try
             {
                 selection = input.nextInt ();
+                if (selection == 6) 
+                {
+                    System.out.println (this.getName () + " has left the garage!");
+                    return false;
+                }
+
                 if (selection < 1 || selection > 6) System.out.println ("Please enter an option between 1 and 5.");
                 else if (this.didUnlock == false && selection != 1) 
                 {
                     System.out.println ("You may not perform that task unless the vehicles have been unlocked.");
                     selection = 0;
                 }
-                
-                if (selection == 1) this.didUnlock = true;
             }
             catch (Exception e)
             {
@@ -66,6 +70,7 @@ public class User {
         switch (selection)
         {
             case 1:
+                this.didUnlock = true;
                 this.invoker.setCommand (reciever::unlock);
                 break;
             case 2:
@@ -78,11 +83,9 @@ public class User {
                 this.invoker.setCommand (reciever::testDrive);
                 break;
             case 5:
+                this.didUnlock = false;
                 this.invoker.setCommand (reciever::lock);
                 break;
-            case 6:
-                System.out.println (this.getName () + " has left the garage!");
-                return false;
         }
         return true;
     }

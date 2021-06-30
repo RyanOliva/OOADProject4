@@ -1,8 +1,4 @@
 package Garage;
-
-import java.util.ArrayList;
-import Employees.*;
-
 public class GarageClock 
 {
     // When the garage opens and closes
@@ -20,11 +16,10 @@ public class GarageClock
     {
         for (int i = this.open; i <= this.close; i++)
         {
-            this.garage.updateTime (i);
+            System.out.println ("It is currently " + this.stringifyTime (i));
+            if (!this.garage.updateTime (i)) break;
         }
     }
-
-
 
     private String stringifyTime (int time) 
     {

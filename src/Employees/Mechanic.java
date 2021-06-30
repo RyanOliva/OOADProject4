@@ -16,47 +16,47 @@ public class Mechanic extends GarageEmployee
 
     public void clockIn (int dayNum)
     {
-        System.out.println ("Mechanic " + this.name + " arrives at Garage on Day " + dayNum + ".");
+        System.out.println (this.name + " arrives at Garage on Day " + dayNum + ".");
 
     }
 
     public void clockOut (int dayNum)
     {
-        System.out.println ("Mechanic " + this.name + " leaves Garage on Day " + dayNum + ".");
+        System.out.println (this.name + " leaves Garage on Day " + dayNum + ".");
 
     }
 
     public void unlock (Vehicle vehicle)
     {
 
-        System.out.println ("Mechanic " + this.name + " unlocked " + vehicle.getLicensePlate () + ".");
+        System.out.println (this.name + " unlocked " + vehicle.getLicensePlate () + ".");
         vehicle.unlock ();
     }
 
     public void lock (Vehicle vehicle)
     {
 
-        System.out.println ("Mechanic " + this.name + " locked " + vehicle.getLicensePlate () + ".");
+        System.out.println (this.name + " locked " + vehicle.getLicensePlate () + ".");
         vehicle.lock ();
     }
 
     public void wash (Vehicle vehicle)
     {
 
-        System.out.println ("Mechanic " + this.name + " washed " + vehicle.getLicensePlate () + ".");
+        System.out.println (this.name + " washed " + vehicle.getLicensePlate () + ".");
         vehicle.wash ();
     }
 
     public void tuneUp (Vehicle vehicle)
     {
 
-        System.out.println ("Mechanic " + this.name + " tuned up " + vehicle.getLicensePlate () + ".");
+        System.out.println (this.name + " tuned up " + vehicle.getLicensePlate () + ".");
         vehicle.tuneUp ();
     }
 
     public void testDrive (Vehicle vehicle)
     {
-        System.out.println ("Mechanic " + this.name + " test drove " + vehicle.getLicensePlate () + ".");
+        System.out.println (this.name + " test drove " + vehicle.getLicensePlate () + ".");
         vehicle.testDrive ();
     }
 

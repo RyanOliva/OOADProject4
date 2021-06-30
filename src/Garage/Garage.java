@@ -2,6 +2,7 @@ package Garage;
 import java.util.*;
 import Employees.*;
 import Vehicles.*;
+import util.User;
 
 public class Garage 
 {
@@ -10,50 +11,29 @@ public class Garage
     // outside the class. 
     private ArrayList <Vehicle> vehicles;
     private Mechanic mechanic = null;
-    private HiringPool hiringPool;
+    private User user = null;
     GarageClock gc;
 
     // Starts an empty list of vehicles, opens a hiring pool, and hires a mechanic
     public Garage ()
     {
         this.vehicles = new ArrayList <Vehicle>();
-        this.hiringPool = new HiringPool ();
+        this.user = User.getUserInstance();
         this.hireMechanic ();
-        this.buyAClock();
-    }
-
-    private void buyAClock ()
-    {
-        this.gc = new GarageClock (8, 20, this);
+        this.gc = new GarageClock (9, 20, this);
     }
 
     // ABSTRACTION: This method handles hiring of a mechanic, while hiding exactly how that's done.
     // It also calls a method that gets a name for a mechanic, that method is another example of abstraction as well.
     private void hireMechanic ()
     {
-        if (this.mechanic != null) System.out.println ("The garage may only have one mechanic hired at a time.");
-        else this.mechanic = new Mechanic (this.hiringPool.getName());
-    }
-
-    // ABSTRACTION: This method handles firing of a mechanic, while hiding exactly how that's done.
-    private void fireMechanic ()
-    {
-        if (this.mechanic == null) System.out.println ("The garage cannot fire a mechanic when one isn't hired.");
-        else this.mechanic = null;
-    }
-
-    // This method returns the current mechanic, null if none hired.
-    public Mechanic getMechanic ()
-    {
-        return this.mechanic;
+        this.mechanic = new Mechanic (this.user.getName());
     }
 
     // Handles a single workday at the garage
     public void performWorkDay (int dayNum)
     {
-        this.mechanic.clockIn (dayNum);
         this.gc.begin ();
-        this.mechanic.clockOut (dayNum);
     }
 
     // Allows addition of a vehicle
@@ -71,39 +51,41 @@ public class Garage
     }
 
     // Gets called by the GarageClock
-    public void updateTime (int time)
+    public boolean updateTime (int time)
     {
         ListIterator<Vehicle> vIterator = this.vehicles.listIterator ();
+        int task = this.user.getTaskSelection();
         while (vIterator.hasNext ())
         {
             Vehicle vehicle = vIterator.next ();
-            switch (time)
+
+            switch (task)
             {
-                case 9:
-                    this.mechanic.unlock (vehicle);
+                case 1:
+                    mechanic.unlock (vehicle);
                     break;
-                case 12:
-                    this.mechanic.wash (vehicle);
-                    break; 
-                case 14:
-                    this.mechanic.tuneUp (vehicle);
+                case 2:
+                    mechanic.wash(vehicle);
                     break;
-                case 16:
-                    this.mechanic.testDrive (vehicle);
-                    if (vehicle instanceof Monster && vehicle.isCrashed ())
+                case 3:
+                    mechanic.tuneUp(vehicle);
+                    break;
+                case 4:
+                    mechanic.testDrive(vehicle);
+                    if (vehicle instanceof Monster && vehicle.isCrashed ()) 
                     {
-                        this.fireMechanic ();
-                        this.hireMechanic ();
-                        vIterator.remove ();
-                        continue;
+                        System.out.println ("Well, that was a good run working at the Garage... Unfortunately you crashed one of our Monster trucks and we're going to have to let you go. Good luck further.");
+                        return false;
                     }
                     break;
-                case 18:
-                    this.mechanic.lock (vehicle);
+                case 5:
+                    mechanic.lock(vehicle);
                     break;
-                default:
-                    return;
+                case 6:
+                    mechanic.clockOut(1);
+                    return false;
             }
         }
+        return true;
     }
 }

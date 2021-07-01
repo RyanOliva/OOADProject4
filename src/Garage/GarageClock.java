@@ -12,6 +12,9 @@ public class GarageClock
         this.garage = garage;
     }
 
+    // Iterate through an entire day updating the garage every hour (or when the time changes)
+    // It also prints the time
+    // If the loop successfully iterates over the entire day, the garage will close.
     public void begin ()
     {
         for (int i = this.open; i < this.close; i++)
@@ -23,6 +26,7 @@ public class GarageClock
         System.out.println ("The Garage is closing for the day!");
     }
 
+    // Turns 24-hour time into 12-hour time with AM or PM appended
     private String stringifyTime (int time) 
     {
         if (time > 12) return (Integer.toString(time - 12) + " PM");

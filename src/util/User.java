@@ -31,6 +31,7 @@ public class User {
     }
 
     // Get a task selection from the user
+    // Sets a command in the garage, which is acting as the invoker
     public boolean waitForCommand ()
     {
         System.out.println ("You can perform one of the following tasks:");
@@ -41,6 +42,7 @@ public class User {
         System.out.println ("5. Lock");
         System.out.println ("6. Leave");
 
+        // Guarantees that a user choose an exceptable option from the list above
         int selection = 0;
         while (selection < 1 || selection > 6)
         {
@@ -67,6 +69,10 @@ public class User {
                 input.next ();
             }
         }
+
+        // These are the commands
+        // The are lambas that reference methods from the mechanic class, which is acting as the reciever
+        // The commands are sent to the garage (invoker), which stores the most recently sent command
         switch (selection)
         {
             case 1:

@@ -21,6 +21,7 @@ public class Vehicle
     {
         this.crashStrategy = cs;
     }
+    
     public CrashStrategy getCrashStrategy () { return this.crashStrategy; }
 
     public String getLicensePlate ()

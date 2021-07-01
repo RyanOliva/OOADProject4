@@ -8,6 +8,8 @@ public class LicensePlate
 {
     private static HashSet <String> licenses = new HashSet <String>();
     
+    // Guarantees a unique license plate number is returned
+    // Adheres to business rule that license plates begin with the letter of their vehicle type
     public static String get (VehicleType vt)
     {
 

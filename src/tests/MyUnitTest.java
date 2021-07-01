@@ -104,21 +104,22 @@ public class MyUnitTest
         }
     }
 
-    // test number 2
+    // test number 8
     @Test
     public void testNormalVehicleFactory () throws IOException {
         Vehicle test = VehicleFactory.create(VehicleType.BIKE);
         assertEquals(test instanceof Bike, true);
     }
 
-
-
+    // test number 9
     @Test
     public void verifyMonsterInstanceOfDetail(){
         Vehicle testV= VehicleFactory.create(VehicleType.MONSTER);
 
         assertTrue(testV instanceof DetailDecorator);
     }
+
+    // test number 10
     @Test
     public void VerifyConvertibleInstanceOfDetail(){
         Vehicle testV= VehicleFactory.create(VehicleType.CONVERTIBLE);

@@ -1,5 +1,6 @@
 package Vehicles;
 
+// Part of the decorator pattern
 public class PolishDecorator extends WashDecorator {
     private Vehicle decorate;
 
@@ -8,6 +9,8 @@ public class PolishDecorator extends WashDecorator {
         super (licensePlate, vt);
         this.decorate = vehicle;
     }
+
+    // This calls it's decoratees wash method, and then appends it's own wash task.
     @Override
     public void wash ()
     {

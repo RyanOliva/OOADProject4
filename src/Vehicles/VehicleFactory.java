@@ -16,12 +16,12 @@ public class VehicleFactory
                 return new Bike (license, VehicleType.BIKE);
             case MONSTER:
                 Monster monster = new Monster (license, VehicleType.MONSTER);
-                // Strategy pattern
+                // Setup for decorator
                 WaxDecorator wax1 = new WaxDecorator (license, monster, VehicleType.MONSTER);
                 WaxDecorator wax2 = new WaxDecorator (license, wax1, VehicleType.MONSTER);
                 PolishDecorator polish = new PolishDecorator (license, wax2, VehicleType.MONSTER);
                 DetailDecorator detail = new DetailDecorator (license, polish, VehicleType.MONSTER);
-                detail.setCrashStrategy(new CrashChance ());
+                detail.setCrashStrategy(new CrashChance ()); // The strategy will be set in the final decorator since this is the fine "vehicle" that will be sent to the client
                 return detail;
             case TRIKE:
                 return new Trike (license, VehicleType.TRIKE);
@@ -34,6 +34,7 @@ public class VehicleFactory
             case WAGON:
                 return new Wagon (license, VehicleType.WAGON);
             case CONVERTIBLE:
+                // Setup for decorator
                 Convertible convertible = new Convertible(license, VehicleType.CONVERTIBLE);
                 WaxDecorator wax = new WaxDecorator (license, convertible, VehicleType.CONVERTIBLE);
                 DetailDecorator detail1 = new DetailDecorator (license, wax, VehicleType.CONVERTIBLE);

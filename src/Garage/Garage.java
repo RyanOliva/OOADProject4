@@ -41,6 +41,7 @@ public class Garage
         vehicles.removeIf (vehicle -> (vehicle.getLicensePlate ().equals (license)));
     }
 
+    // Accept a new command, doesn't matter from who.
     public void setCommand (Command command)
     {
         this.command = command;
@@ -50,11 +51,17 @@ public class Garage
     public boolean updateTime (int time)
     {
         ListIterator<Vehicle> vIterator = this.vehicles.listIterator ();
+
+        // Wait for a user to select a task. If the user returns true then a command was set and we can continue forward
         if (!this.user.waitForCommand()) return false;
+
+        // Iterate over the vehicles in the garage
         while (vIterator.hasNext ())
         {
             Vehicle vehicle = vIterator.next ();
 
+            // Execute the stored command (the garage is acting as the invoker)
+            // The garage also doesn't know who the reciever is, since that was set by whoever set the command (in this case the user (or client))
             this.command.execute(vehicle);
 
             if (vehicle.isCrashed ()) 

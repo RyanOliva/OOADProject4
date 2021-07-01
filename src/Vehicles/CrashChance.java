@@ -1,6 +1,7 @@
 package Vehicles;
 import java.util.Random;
 
+// This crash strategy has a 20% of crashing whatever vehicle it is connected to
 public class CrashChance extends CrashStrategy
 {
     public boolean isCrashed ()

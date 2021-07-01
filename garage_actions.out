@@ -1,0 +1,842 @@
+Please enter your name: Alex
+
+It is currently 9 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 2
+You may not perform that task unless the vehicles have been unlocked.
+Which would like to perform (enter 1-6): 1
+Alex unlocked B8G84T.
+BIKE B8G84T unlocked.
+Alex unlocked TQGN12.
+TRIKE TQGN12 unlocked.
+Alex unlocked SN7TMT.
+SIDECAR SN7TMT unlocked.
+Alex unlocked H53L7H.
+HATCHBACK H53L7H unlocked.
+Alex unlocked SW3GVR.
+SUV SW3GVR unlocked.
+Alex unlocked WZJR7W.
+WAGON WZJR7W unlocked.
+Alex unlocked CN5DCG.
+CONVERTIBLE CN5DCG unlocked.
+Alex unlocked P1THLY.
+PICKUP P1THLY unlocked.
+Alex unlocked DWLXDX.
+DELIVERY DWLXDX unlocked.
+Alex unlocked MDYKR7.
+MONSTER MDYKR7 unlocked.
+Alex unlocked SZZBHN.
+SCHOOLBUS SZZBHN unlocked.
+Alex unlocked SZ454I.
+SHUTTLEBUS SZ454I unlocked.
+
+It is currently 10 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 2
+Alex washed B8G84T.
+BIKE B8G84T is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+BIKE B8G84T shines. 
+Alex washed TQGN12.
+TRIKE TQGN12 is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+TRIKE TQGN12 shines.
+Alex washed SN7TMT.
+SIDECAR SN7TMT is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+SIDECAR SN7TMT shines.
+Alex washed H53L7H.
+HATCHBACK H53L7H is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+HATCHBACK H53L7H sparkles.
+Alex washed SW3GVR.
+SUV SW3GVR is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+SUV SW3GVR shines.
+Alex washed WZJR7W.
+WAGON WZJR7W is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+WAGON WZJR7W shines.
+Alex washed CN5DCG.
+CONVERTIBLE CN5DCG is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+CONVERTIBLE CN5DCG sparkles.
+It has been waxed
+It has been detailed.
+It has been detailed.
+Alex washed P1THLY.
+PICKUP P1THLY is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+PICKUP P1THLY sparkles.
+Alex washed DWLXDX.
+DELIVERY DWLXDX is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+DELIVERY DWLXDX shines.
+Alex washed MDYKR7.
+MONSTER MDYKR7 is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+MONSTER MDYKR7 shines.
+It has been waxed
+It has been waxed
+It has been polished.
+It has been detailed.
+Alex washed SZZBHN.
+SCHOOLBUS SZZBHN is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+SCHOOLBUS SZZBHN shines.
+Alex washed SZ454I.
+SHUTTLEBUS SZ454I is starting the wash process.
+It has been soaped.
+It has been scrubbed.
+It has been rinsed.
+It has been dried.
+SHUTTLEBUS SZ454I shines.
+
+It is currently 11 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 6
+Alex has left the garage!
+
+================================================================================================ END SESSION 1
+
+Please enter your name: Alex
+
+It is currently 9 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 1
+Alex unlocked BMWGE2.
+BIKE BMWGE2 unlocked.
+Alex unlocked TL2WB1.
+TRIKE TL2WB1 unlocked.
+Alex unlocked SH26FC.
+SIDECAR SH26FC unlocked.
+Alex unlocked HRAY6E.
+HATCHBACK HRAY6E unlocked.
+Alex unlocked S0PRNI.
+SUV S0PRNI unlocked.
+Alex unlocked WCXNW0.
+WAGON WCXNW0 unlocked.
+Alex unlocked C22FOG.
+CONVERTIBLE C22FOG unlocked.
+Alex unlocked PWYWI1.
+PICKUP PWYWI1 unlocked.
+Alex unlocked DWC63Q.
+DELIVERY DWC63Q unlocked.
+Alex unlocked MPO32U.
+MONSTER MPO32U unlocked.
+Alex unlocked S8SC2V.
+SCHOOLBUS S8SC2V unlocked.
+Alex unlocked SIGS6B.
+SHUTTLEBUS SIGS6B unlocked.
+
+It is currently 10 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 5
+Alex locked BMWGE2.
+BIKE BMWGE2 locked.
+Alex locked TL2WB1.
+TRIKE TL2WB1 locked.
+Alex locked SH26FC.
+SIDECAR SH26FC locked.
+Alex locked HRAY6E.
+HATCHBACK HRAY6E locked.
+Alex locked S0PRNI.
+SUV S0PRNI locked.
+Alex locked WCXNW0.
+WAGON WCXNW0 locked.
+Alex locked C22FOG.
+CONVERTIBLE C22FOG locked.
+Alex locked PWYWI1.
+PICKUP PWYWI1 locked.
+Alex locked DWC63Q.
+DELIVERY DWC63Q locked.
+Alex locked MPO32U.
+MONSTER MPO32U locked.
+Alex locked S8SC2V.
+SCHOOLBUS S8SC2V locked.
+Alex locked SIGS6B.
+SHUTTLEBUS SIGS6B locked.
+
+It is currently 11 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 2
+You may not perform that task unless the vehicles have been unlocked.
+Which would like to perform (enter 1-6): 1
+Alex unlocked BMWGE2.
+BIKE BMWGE2 unlocked.
+Alex unlocked TL2WB1.
+TRIKE TL2WB1 unlocked.
+Alex unlocked SH26FC.
+SIDECAR SH26FC unlocked.
+Alex unlocked HRAY6E.
+HATCHBACK HRAY6E unlocked.
+Alex unlocked S0PRNI.
+SUV S0PRNI unlocked.
+Alex unlocked WCXNW0.
+WAGON WCXNW0 unlocked.
+Alex unlocked C22FOG.
+CONVERTIBLE C22FOG unlocked.
+Alex unlocked PWYWI1.
+PICKUP PWYWI1 unlocked.
+Alex unlocked DWC63Q.
+DELIVERY DWC63Q unlocked.
+Alex unlocked MPO32U.
+MONSTER MPO32U unlocked.
+Alex unlocked S8SC2V.
+SCHOOLBUS S8SC2V unlocked.
+Alex unlocked SIGS6B.
+SHUTTLEBUS SIGS6B unlocked.
+
+It is currently 12 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 1 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 2 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 3 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 4 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 5 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 6 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 7 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove BMWGE2.
+Bike BMWGE2 ridden.
+Alex test drove TL2WB1.
+Trike TL2WB1 ridden.
+Alex test drove SH26FC.
+Sidecar SH26FC ridden.
+Alex test drove HRAY6E.
+HATCHBACK HRAY6E drives.
+Alex test drove S0PRNI.
+SUV S0PRNI drives.
+Alex test drove WCXNW0.
+WAGON WCXNW0 drives.
+Alex test drove C22FOG.
+CONVERTIBLE C22FOG drives.
+Alex test drove PWYWI1.
+PICKUP PWYWI1 drives.
+Alex test drove DWC63Q.
+DELIVERY DWC63Q drives.
+Alex test drove MPO32U.
+MONSTER MPO32U drives.
+Alex test drove S8SC2V.
+SCHOOLBUS S8SC2V drives.
+Alex test drove SIGS6B.
+SHUTTLEBUS SIGS6B drives.
+
+It is currently 8 PM
+The Garage is closing for the day!
+
+=================================================================================================== END SESSION 2
+
+Please enter your name: Alex
+
+It is currently 9 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 1
+Alex unlocked B2TKES.
+BIKE B2TKES unlocked.
+Alex unlocked TXKUPY.
+TRIKE TXKUPY unlocked.
+Alex unlocked S7Q0KE.
+SIDECAR S7Q0KE unlocked.
+Alex unlocked HY41T5.
+HATCHBACK HY41T5 unlocked.
+Alex unlocked S4FPSP.
+SUV S4FPSP unlocked.
+Alex unlocked W80MGZ.
+WAGON W80MGZ unlocked.
+Alex unlocked CRQ6O0.
+CONVERTIBLE CRQ6O0 unlocked.
+Alex unlocked PPHFOW.
+PICKUP PPHFOW unlocked.
+Alex unlocked DF8ETE.
+DELIVERY DF8ETE unlocked.
+Alex unlocked MJMF7D.
+MONSTER MJMF7D unlocked.
+Alex unlocked SKKFB5.
+SCHOOLBUS SKKFB5 unlocked.
+Alex unlocked SI104W.
+SHUTTLEBUS SI104W unlocked.
+
+It is currently 10 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 11 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 12 AM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 1 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 2 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 3 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 4 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D drives.
+Alex test drove SKKFB5.
+SCHOOLBUS SKKFB5 drives.
+Alex test drove SI104W.
+SHUTTLEBUS SI104W drives.
+
+It is currently 5 PM
+You can perform one of the following tasks:
+1. Unlock
+2. Wash
+3. Tune-Up
+4. Test Drive
+5. Lock
+6. Leave
+Which would like to perform (enter 1-6): 4
+Alex test drove B2TKES.
+Bike B2TKES ridden.
+Alex test drove TXKUPY.
+Trike TXKUPY ridden.
+Alex test drove S7Q0KE.
+Sidecar S7Q0KE ridden.
+Alex test drove HY41T5.
+HATCHBACK HY41T5 drives.
+Alex test drove S4FPSP.
+SUV S4FPSP drives.
+Alex test drove W80MGZ.
+WAGON W80MGZ drives.
+Alex test drove CRQ6O0.
+CONVERTIBLE CRQ6O0 drives.
+Alex test drove PPHFOW.
+PICKUP PPHFOW drives.
+Alex test drove DF8ETE.
+DELIVERY DF8ETE drives.
+Alex test drove MJMF7D.
+MONSTER MJMF7D crashed.
+Well, that was a good run working at the Garage... Unfortunately you crashed one of our Monster trucks and we're going to have to let you go. Good luck further.
+
+
+====================================================================================================================================================================== END SESSION 3

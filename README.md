@@ -22,9 +22,6 @@ All of our code is located under the `src` directory. The program entry point, o
 - `Employees`: Contains the Mechanic class, GarageEmployee class, and GarageAnnouncer class.
 - `util`: Contains classes called LicensePlate, Command, and User. LicensePlate is a static class that the VehicleFactory uses to generate license plates that are guaranteed to be program-wide unique. User generates and stores the user input through use of a singelton. Command is for command pattern interface.
 - `Project4.java`: Program entry point.
-- `garage_actions.out`: Program output after running the simulation for 10 days.
 - `tests`: Contains 10 JUnit tests testing varying functionality. 
 
-UML
-
-[Project4_UpdatedUML.pdf](https://github.com/RyanOliva/OOADProject4/files/6744867/Project4_UpdatedUML.pdf)
+`garage_actions.out`: This is the output file

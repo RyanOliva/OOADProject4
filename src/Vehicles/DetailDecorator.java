@@ -3,8 +3,8 @@ package Vehicles;
 public class DetailDecorator extends WashDecorator{
     private Vehicle decorate;
 
-    public DetailDecorator(String licensePlate, Vehicle vehicle) {
-        super(licensePlate);
+    public DetailDecorator(String licensePlate, Vehicle vehicle, VehicleType vt) {
+        super(licensePlate, vt);
         this.decorate = vehicle;
     }
 

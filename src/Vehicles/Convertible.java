@@ -2,8 +2,8 @@ package Vehicles;
 
 public class Convertible extends Car
 {
-    public Convertible (String licensePlate)
+    public Convertible (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }

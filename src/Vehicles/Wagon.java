@@ -1,8 +1,8 @@
 package Vehicles;
 
 public class Wagon extends Car{
-    public Wagon (String licensePlate)
+    public Wagon (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }

@@ -21,6 +21,13 @@ public class Garage
         this.gc = new GarageClock (9, 20, this);
     }
 
+    public Garage (String name)
+    {
+        this.vehicles = new ArrayList <Vehicle>();
+        this.user = User.getUserInstance(this);
+        this.gc = new GarageClock (9, 20, this);
+    }
+
     // Handles a single workday at the garage
     public void performWorkDay (int dayNum)
     {

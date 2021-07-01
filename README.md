@@ -5,7 +5,7 @@ Alex Mazur and Ryan Oliva
 ## Assumptions
 This project was developed in IntelliJ. There are files in this directory that are relevant only to IntelliJ.
 
-The main method initializes the simulation and triggers the work in the simulation each "day". It collects a number of days from the user, adds vehicles to the garage, and then loops for how many days the user entered.
+Only runs for one day and every hour the program will wait for the user to enter input on what activity they would like to do. The program will act accordingly until the end of the work day or the user chooses to close the garage.
 
 ## How to compile and run
 This section is assuming you are on a CLI with a JDK installed.
@@ -18,9 +18,9 @@ All of our code is located under the `src` directory. The program entry point, o
 
 `src` contains the following sub-directories and files:
 - `Vehicles`: This directory contains all java classes related to vehicles, it also contains the VehicleFactory class, VehicleType enum, and CrashStrategies.
-- `Garage`: This directory contains the Garage class. It manages the "day to day" happenings of a garage. The class contains many vehicles, one mechanic, one GarageAnnoucer, and one GarageClock. This directory also contains a class called `HiringPool` that fetches a name for a new mechanic.
+- `Garage`: This directory contains the Garage class. It manages the happenings of a garage throughout the course of the day. The class contains one of each vehicle, one mechanic, and one GarageClock. 
 - `Employees`: Contains the Mechanic class, GarageEmployee class, and GarageAnnouncer class.
-- `util`: Contains a class called LicensePlate. This is a static class that the VehicleFactory uses to generate license plates that are guaranteed to be program-wide unique.
+- `util`: Contains classes called LicensePlate, Command, and User. LicensePlate is a static class that the VehicleFactory uses to generate license plates that are guaranteed to be program-wide unique. User generates and stores the user input through use of a singelton. Command is for command pattern interface.
 - `Project4.java`: Program entry point.
 - `garage_actions.out`: Program output after running the simulation for 10 days.
-
+- `tests`: Contains 10 JUnit tests testing varying functionality. 

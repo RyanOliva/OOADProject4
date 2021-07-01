@@ -3,7 +3,7 @@ import java.util.*;
 
 // ABSTRACT CLASS: This class is the superclass for all vehicle types.
 // You cannot make an instance of a vehicle, but all vehicle are, well, vehicles. So they extend this class.
-public abstract class Vehicle 
+public class Vehicle
 {
     private String licensePlate;
     private boolean isCrashed = false;

@@ -4,9 +4,9 @@ import java.util.*;
 public abstract class Car extends Vehicle
 {
 
-    public Car (String licensePlate)
+    public Car (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 
     @Override

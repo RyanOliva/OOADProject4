@@ -1,8 +1,8 @@
 package Vehicles;
 
 public class Sidecar extends Motorcycle {
-    public Sidecar (String licensePlate)
+    public Sidecar (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }

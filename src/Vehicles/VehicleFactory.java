@@ -13,40 +13,40 @@ public class VehicleFactory
         switch (vt)
         {
             case BIKE:
-                return new Bike (license);
+                return new Bike (license, VehicleType.BIKE);
             case MONSTER:
-                Monster monster = new Monster (license);
+                Monster monster = new Monster (license, VehicleType.MONSTER);
                 // Strategy pattern
-                monster.setCrashStrategy(new CrashChance ());
-                WaxDecorator wax1 = new WaxDecorator (license, monster);
-                WaxDecorator wax2 = new WaxDecorator (license, wax1);
-                PolishDecorator polish = new PolishDecorator (license, wax2);
-                DetailDecorator detail = new DetailDecorator (license, polish);
+                WaxDecorator wax1 = new WaxDecorator (license, monster, VehicleType.MONSTER);
+                WaxDecorator wax2 = new WaxDecorator (license, wax1, VehicleType.MONSTER);
+                PolishDecorator polish = new PolishDecorator (license, wax2, VehicleType.MONSTER);
+                DetailDecorator detail = new DetailDecorator (license, polish, VehicleType.MONSTER);
+                detail.setCrashStrategy(new CrashChance ());
                 return detail;
             case TRIKE:
-                return new Trike (license);
+                return new Trike (license, VehicleType.TRIKE);
             case SIDECAR:
-                return new Sidecar (license);
+                return new Sidecar (license, VehicleType.SIDECAR);
             case HATCHBACK:
-                return new Hatchback (license);
+                return new Hatchback (license, VehicleType.HATCHBACK);
             case SUV:
-                return new SUV (license);
+                return new SUV (license, VehicleType.SUV);
             case WAGON:
-                return new Wagon (license);
+                return new Wagon (license, VehicleType.WAGON);
             case CONVERTIBLE:
-                Convertible convertible = new Convertible(license);
-                WaxDecorator wax = new WaxDecorator (license, convertible);
-                DetailDecorator detail1 = new DetailDecorator (license, wax);
-                DetailDecorator detail2 = new DetailDecorator (license, detail1);
+                Convertible convertible = new Convertible(license, VehicleType.CONVERTIBLE);
+                WaxDecorator wax = new WaxDecorator (license, convertible, VehicleType.CONVERTIBLE);
+                DetailDecorator detail1 = new DetailDecorator (license, wax, VehicleType.CONVERTIBLE);
+                DetailDecorator detail2 = new DetailDecorator (license, detail1, VehicleType.CONVERTIBLE);
                 return detail2;
             case PICKUP:
-                return new Pickup (license);
+                return new Pickup (license, VehicleType.PICKUP);
             case DELIVERY:
-                return new Delivery (license);
+                return new Delivery (license, VehicleType.DELIVERY);
             case SCHOOLBUS:
-                return new Schoolbus (license);
+                return new Schoolbus (license, VehicleType.SCHOOLBUS);
             case SHUTTLEBUS:
-                return new Shuttlebus (license);
+                return new Shuttlebus (license, VehicleType.SHUTTLEBUS);
             default:
                 System.out.println ("Something went horribly wrong. Attempted to create an unknown vehicle.");
                 return null;

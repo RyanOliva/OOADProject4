@@ -1,8 +1,8 @@
 package Vehicles;
 
 public abstract class Bus extends Vehicle{
-    public Bus (String licensePlate)
+    public Bus (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }

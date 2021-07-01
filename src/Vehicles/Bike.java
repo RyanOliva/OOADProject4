@@ -2,8 +2,8 @@ package Vehicles;
 
 public class Bike extends Motorcycle
 {
-    public Bike (String licensePlate)
+    public Bike (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }

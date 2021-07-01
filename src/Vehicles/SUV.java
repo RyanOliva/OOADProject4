@@ -1,9 +1,9 @@
 package Vehicles;
 
 public class SUV extends Car{
-    public SUV (String licensePlate)
+    public SUV (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 
 }

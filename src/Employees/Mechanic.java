@@ -6,8 +6,6 @@ public class Mechanic extends GarageEmployee
 {
     private String name;
 
-    // An ArrayList of observers
-
     public Mechanic (String name)
     {
         this.name = name;

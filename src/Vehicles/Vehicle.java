@@ -8,10 +8,12 @@ public class Vehicle
     private String licensePlate;
     private boolean isCrashed = false;
     private CrashStrategy crashStrategy = new CrashNever();
+    private VehicleType vt;
 
-    public Vehicle (String licensePlate)
+    public Vehicle (String licensePlate, VehicleType vt)
     {
         this.licensePlate = licensePlate;
+        this.vt = vt;
     }
 
     // Strategy pattern algorithm setter
@@ -19,6 +21,7 @@ public class Vehicle
     {
         this.crashStrategy = cs;
     }
+    public CrashStrategy getCrashStrategy () { return this.crashStrategy; }
 
     public String getLicensePlate ()
     {
@@ -30,27 +33,27 @@ public class Vehicle
         String result = "shines";
         Random rand = new Random ();
         if (rand.nextInt (10) < 3) result = "sparkles";
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " is starting the wash process.");
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " is starting the wash process.");
         System.out.println ("It has been soaped.");
         System.out.println ("It has been scrubbed.");
         System.out.println ("It has been rinsed.");
         System.out.println ("It has been dried.");
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result + ". ");
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " " + result + ". ");
     }
 
     public void unlock ()
     {
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " unlocked.");
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " unlocked.");
     }
 
     public void lock ()
     {
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " locked.");
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " locked.");
     }
 
     public void tuneUp ()
     {
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " runs.");
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " runs.");
     }
 
     // This method uses the strategy pattern to determine if the vehicle should crash.
@@ -59,7 +62,7 @@ public class Vehicle
         String result = "drives.";
         this.isCrashed = this.crashStrategy.isCrashed ();
         if (this.isCrashed) result = "crashed.";
-        System.out.println (this.getClass ().getSimpleName () + " " + this.getLicensePlate () + " " + result );
+        System.out.println (this.vt.name () + " " + this.getLicensePlate () + " " + result );
     }
 
     public boolean isCrashed () 

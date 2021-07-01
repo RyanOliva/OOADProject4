@@ -3,8 +3,8 @@ package Vehicles;
 public class WaxDecorator extends WashDecorator{
     private Vehicle decorate;
 
-    public WaxDecorator(String licensePlate, Vehicle vehicle) {
-        super(licensePlate);
+    public WaxDecorator(String licensePlate, Vehicle vehicle, VehicleType vt) {
+        super(licensePlate, vt);
         this.decorate = vehicle;
     }
     @Override

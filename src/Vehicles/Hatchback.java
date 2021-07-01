@@ -1,9 +1,9 @@
 package Vehicles;
 
 public class Hatchback extends Car{
-    public Hatchback (String licensePlate)
+    public Hatchback (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 
 }

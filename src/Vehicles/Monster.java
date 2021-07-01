@@ -2,8 +2,8 @@ package Vehicles;
 
 public class Monster extends Truck
 {
-    public Monster (String licensePlate)
+    public Monster (String licensePlate, VehicleType vt)
     {
-        super (licensePlate);
+        super (licensePlate, vt);
     }
 }
